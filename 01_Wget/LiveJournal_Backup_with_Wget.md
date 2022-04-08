@@ -8,7 +8,7 @@ Click **Code > Download ZIP** to download the code. Then unzip the file on your 
 
 Open a terminal window. Then run the following command to change your current directory to `digital-ethnography-demo/01_Wget`:
 
-	`cd ~/Documents/GitHub/digital-ethnography-demo/01_Wget/`
+	cd ~/Documents/GitHub/digital-ethnography-demo/01_Wget/
 
 The file `LiveJournal_URLs.txt` contains a series of LiveJournal URLs, one URL per line:
 
@@ -30,9 +30,9 @@ To stop Wget while it's running, you can press `ctrl+C`.
 
 ➡️ Now turn off your wi-fi and try opening a downloaded page in your browser. Does it look different?
 
-Add a few more useful options to your Wget command:
+The `--continue` option will let Wget continue if the connection was previously interrupted. The `--wait=1` option will make Wget wait 1 second between downloads.
 
-	`wget --wait=1 --continue -i LiveJournal_URLs.txt`
+	wget --wait=1 --continue -i LiveJournal_URLs.txt
 
 
 Try the same commands with the list of URLs in the file `IG_Bot_URLs.txt` and see what happens. Can you find any useful information (such as follower count) in the HTML files you download?
